@@ -1,25 +1,18 @@
 package com.jeremiahpierucci;
 
-import java.io.IOException;
-import java.security.cert.CertificateException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
-
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+
+import javax.net.ssl.*;
+import java.io.IOException;
+import java.security.cert.CertificateException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AppsversionreaderApplication {
 
