@@ -21,7 +21,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-//@SpringBootApplication
 public class AppsversionreaderApplication {
 
     public static void main(String[] args) throws IOException, ParseException {
@@ -29,7 +28,6 @@ public class AppsversionreaderApplication {
 
         List<JSONObject> apps = new ArrayList<>();
 
-        //		SpringApplication.run(AppsversionreaderApplication.class, args);
         OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()
